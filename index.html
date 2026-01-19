@@ -1,1 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientist (m/f/d) – Immunology – Doctoral Candidate Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            margin-top: 120px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .intro {
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .publications {
+            margin: 30px 0;
+        }
+
+        .publication-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .publication-title {
+            font-weight: bold;
+        }
+
+        .publication-journal {
+            font-style: italic;
+        }
+
+        .publication-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .publication-item a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .highlight-box h2 {
+            border-bottom: none;
+            margin-top: 0;
+        }
+
+        .contact-frame {
+            border: 3px solid #3498db;
+            padding: 30px;
+            text-align: center;
+            margin: 40px 0;
+            background-color: #f8f9fa;
+        }
+
+        .email-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .email-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .modal-text {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .modal-button {
+            padding: 12px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .decline-button {
+            background-color: #95a5a6;
+            color: white;
+        }
+
+        .decline-button:hover {
+            background-color: #7f8c8d;
+        }
+
+        .continue-button {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        .continue-button:hover {
+            background-color: #229954;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .content {
+                margin-top: 140px;
+                padding: 15px;
+            }
+
+            .modal-content {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .modal-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Scientist (m/f/d) – Immunology – as doctoral candidate</h1>
+    </div>
+
+    <div class="content">
+        <div class="intro">
+            <p>Apply now to join our team as a doctoral candidate! Our research focuses on autoimmune diseases, particularly inflammatory arthritis. We study mesenchymal cells in inflammation-driven immune diseases.</p>
+            
+            <p style="margin-top: 15px;">Our multidisciplinary team operates at the intersection of clinical, translational, and mechanistic research. We work with patient cohorts and human tissue samples, utilising cutting-edge technologies. Through advanced omics profiling and molecular biology modelling, we seek to unveil the molecular and cellular mechanisms underlying disease resistance, remission, and relapse. Find out more about our research:</p>
+        </div>
+
+        <div class="publications">
+            <div class="publication-item">
+                <span class="publication-title">Skin-derived myeloid precursors and joint-resident fibroblasts spread psoriatic disease from skin to joints</span>, <span class="publication-journal">Nature Immunology</span>, 2025 <a href="https://doi.org/10.1038/s41590-025-02351-z" target="_blank">https://doi.org/10.1038/s41590-025-02351-z</a>
+            </div>
+            <div class="publication-item">
+                <span class="publication-title">Effects of different B-cell-depleting strategies on the lymphatic tissue</span>, <span class="publication-journal">Annals of the Rheumatic Diseases</span>, 2025 <a href="https://doi.org/10.1016/j.ard.2025.06.2120" target="_blank">https://doi.org/10.1016/j.ard.2025.06.2120</a>
+            </div>
+            <div class="publication-item">
+                <span class="publication-title">CD19-CAR T-cell therapy induces deep tissue depletion of B cells</span>, <span class="publication-journal">Annals of the Rheumatic Diseases</span>, 2025 <a href="https://doi.org/10.1136/ard-2024-226142" target="_blank">https://doi.org/10.1136/ard-2024-226142</a>
+            </div>
+            <div class="publication-item">
+                <span class="publication-title">CD200+ fibroblasts form a pro-resolving mesenchymal network in arthritis</span>, <span class="publication-journal">Nature Immunology</span>, 2024 <a href="https://doi.org/10.1038/s41590-024-01774-4" target="_blank">https://doi.org/10.1038/s41590-024-01774-4</a>
+            </div>
+        </div>
+
+        <p>We are seeking a motivated scientist to join our wet lab team.</p>
+
+        <div class="section">
+            <h2>Research environment:</h2>
+            <p>Our institute is one of the leading centres for clinically oriented immunological research. Our multidisciplinary team of biologists, data scientists, and physicians works closely together on current challenges in clinical immunology research. We use advanced technologies such as single-cell RNA sequencing, spatial transcriptomics, and imaging mass cytometry, as well as established in vitro and in vivo model systems. The doctoral candidate will become a member of the life@FAU graduate school, which offers structured training, mentoring, transferable skills, and a unique infrastructure for team building and exchange opportunities for doctoral candidates. Apply now and become part of the newly DFG-funded Collaborative Research Center CASCAID "Cellular and Systemic Control of Autoimmune Diseases".</p>
+        </div>
+
+        <div class="section">
+            <h2>Your responsibilities within the team:</h2>
+            <p>Working closely with physicians and data scientists, you will create high-dimensional multi-omics datasets to uncover molecular and cellular mechanisms of autoimmunity. You will implement state-of-the-art methods into laboratory workflows and use sophisticated in vitro and in vivo model systems to study interactions between immune cells and stroma cells, model clinical findings, and validate data mining approaches. You will be supervised by experienced life scientists, but you will also contribute your own independent ideas and approaches. You will communicate research strategies and data to both the team and the international scientific community.</p>
+        </div>
+
+        <div class="section">
+            <h2>Your qualification profile:</h2>
+            <ul>
+                <li>Master's degree (or equivalent) in immunology, molecular biology, biochemistry or a related field, either held or due to be completed at the time of application</li>
+                <li>Strong interest in immunological research</li>
+                <li>Analytical thinking and the ability to work independently</li>
+                <li>High level of motivation and commitment</li>
+                <li>Excellent written and spoken English</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>We offer:</h2>
+            <ul>
+                <li>Employment in accordance with TV-L (collective agreement for the public sector) based on DFG standards (E13, 65%)</li>
+                <li>The opportunity to make a significant research contribution to publication-oriented projects and to write high-quality manuscripts</li>
+                <li>Excellent access to state-of-the-art technologies</li>
+                <li>Support in presenting your work at international conferences to exchange ideas with the international scientific community</li>
+                <li>A strong network of internationally renowned collaborators</li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <h2>Your application should include:</h2>
+            <ul>
+                <li>A cover letter stating your motivation</li>
+                <li>A brief summary of your practical skills and research experience</li>
+                <li>A curriculum vitae</li>
+                <li>University diplomas including transcripts of records</li>
+                <li>Contact details for two academic references, who agree to be contacted during the selection process</li>
+                <li>Letters of recommendation</li>
+            </ul>
+        </div>
+
+        <div class="contact-frame">
+            <p style="margin-bottom: 10px;">Please send inquiries and applications (single PDF file, max. 5 MB) to</p>
+            <button class="email-button" onclick="showModal()">ramminglab.m3@uk-erlangen.de</button>
+            <p style="margin-top: 10px; font-style: italic;">stating "Immunology2026" in the subject line.</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <p class="modal-text">I have all required documents as a single PDF file.</p>
+            <div class="modal-buttons">
+                <button class="modal-button decline-button" onclick="closeModal()">Decline</button>
+                <button class="modal-button continue-button" onclick="openEmail()">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById('emailModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('emailModal').style.display = 'none';
+        }
+
+        function openEmail() {
+            window.location.href = 'mailto:ramminglab.m3@uk-erlangen.de?subject=Immunology2026';
+            closeModal();
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById('emailModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
